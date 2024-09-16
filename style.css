@@ -1,0 +1,44 @@
+body, 
+html, 
+*{
+    font-size: 10px;
+    box-sizing:border-box;
+    margin: 0;
+    padding:0;
+}
+
+.container{
+    width: 90vw;
+    margin: 2rem auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+
+}
+
+.card{
+    height:40rem;
+    width: 30%; 
+    border:2px sold black;
+    border-radius:30px;
+    display:flex;
+    margin: 30px;
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-between;
+    background-color: hotpink;
+}
+
+.card-img{
+    width:100%;
+    height:45%;
+    object-fit: center;
+}
+
+.card-header {
+    margin-top: 1.2rem;
+}
+
+.card-price{
+    margin-bottom:1.2rem;
+}
