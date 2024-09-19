@@ -14,8 +14,7 @@ h1{
 }
 
 .container{
-    width: 90vw;
-    margin: 2rem auto;
+    width: 85vw;
     display:flex;
     flex-wrap:wrap;
     justify-content:space-around;
@@ -35,10 +34,24 @@ h1{
     background-color: rgb(255, 182, 219);
     object-fit:cover;
 }
+@media screen and (max-width:700px) {
+    .card{
+        width:45%;
+    }
+    .container{
+        flex-direction: column;
+    }
+}
 
+@media screen and (max-width:600px) {
+    .card{
+        width:100%;
+    }
+
+}
 .card-img{
-    width:50%;
-    height:40%;
+    width:auto;
+    height:200px;
 }
 
 .card-header {
