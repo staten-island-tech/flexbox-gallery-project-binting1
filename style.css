@@ -19,10 +19,11 @@ h1{
     flex-wrap:wrap;
     justify-content:space-around;
     flex-direction:row;
+
 }
 
 .card{
-    height:40rem;
+    height:40vh;
     width:40rem; 
     border:2px sold black;
     border-radius:30px;
@@ -34,24 +35,28 @@ h1{
     background-color: rgb(255, 182, 219);
     object-fit:cover;
 }
-@media screen and (max-width:700px) {
+
+@media screen and (min-width:760px) and (min-height:1020px) {
     .card{
-        width:45%;
+        width:30%;
     }
     .container{
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:720px) {
     .card{
         width:100%;
+    }
+    .container{
+        flex-direction: column;
     }
 
 }
 .card-img{
     width:auto;
-    height:200px;
+    height:25vh;
 }
 
 .card-header {
