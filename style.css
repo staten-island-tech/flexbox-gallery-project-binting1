@@ -8,27 +8,27 @@ html,
 }
 
 h1{
-    font-size:50px;
+    font-size:5rem;
     text-align: center;
     margin-top:20px;
 }
 
 .container{
-    width: 85vw;
     display:flex;
     flex-wrap:wrap;
-    justify-content:space-around;
+    align-items: center;
     flex-direction:row;
+    justify-content: center;
 
 }
 
 .card{
-    height:40vh;
-    width:40rem; 
-    border:2px sold black;
+    height:30rem;
+    width:20rem; 
+    border:2px;
     border-radius:30px;
+    margin:25px;
     display:flex;
-    margin: 30px;
     flex-direction:column;
     align-items:center;
     justify-content:space-evenly;
@@ -36,16 +36,16 @@ h1{
     object-fit:cover;
 }
 
-@media screen and (min-width:760px) and (min-height:1020px) {
+@media screen and (max-width:1023px) {
     .card{
-        width:30%;
+        width:100%;
     }
     .container{
         flex-direction: row;
     }
-}
 
-@media screen and (max-width:720px) {
+}
+@media screen and (min-width:820px) {
     .card{
         width:100%;
     }
@@ -55,18 +55,20 @@ h1{
 
 }
 .card-img{
-    width:auto;
-    height:25vh;
+    width:100%;
+    box-sizing: content-box;
+    object-fit:contain;
 }
 
 .card-header {
-    margin-top: 1.2rem;
-    font-size: 30px;
+    top: 15px;
+    font-size: 3rem;
+
 }
 
 .card-price{
-    margin-bottom:1.2rem;
-    font-size: 15px;
+    font-size: 1.5rem;
+    bottom:25px;
 }
 
 a,
@@ -79,7 +81,8 @@ a:focus {
 
 button{
     transition: all 0.3s;
-    font-size: 80px;
+    font-size: 2rem;
+    bottom:5rem;
 }
 
 button:hover{
