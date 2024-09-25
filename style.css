@@ -43,8 +43,8 @@ h1{
     transition: transform 0.3s ease;
     
 }
-.card:hover{
-    transform:scale(1.1) translateY(5px) translateX(-5px);
+.card-img:hover{
+    transform:translate(-5px) ;
     filter:drop-shadow(52);
     background-color: #f8d7ab;
 }
@@ -84,7 +84,11 @@ h1{
 .card-price{
     font-size: 1.5rem;
     margin: 3px;
-  
+}
+
+.card-price:hover{
+    transform:scale(2);
+    color:#794604;
 }
 
 a,
