@@ -15,6 +15,8 @@ h1{
     background-color: #deb887;
     border-width: 8px;
 }
+
+
 .background{
     background-image: url(img/background.jpg);
     
@@ -38,9 +40,11 @@ h1{
     justify-content:space-between;
     background-color:#deb887;
     box-sizing:border-box;
+    transition: transform 0.3s ease;
+    
 }
 .card:hover{
-    transform:scale(1.05) translateY(5px) translateX(-5px);
+    transform:scale(1.1) translateY(5px) translateX(-5px);
     filter:drop-shadow(52);
     background-color: #f8d7ab;
 }
@@ -80,6 +84,7 @@ h1{
 .card-price{
     font-size: 1.5rem;
     margin: 3px;
+  
 }
 
 a,
@@ -109,29 +114,38 @@ button:hover{
     background-color: #e99426;
 }
 
-/*
+ .fade-in {
+     animation: fade-in 0.5s ease-in;
+ }
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+ }
+
+ /*
 .animation{
     height:2rem;
     width:2rem;
     position:absolute;
 }
 
-@keyframes demo{
+
+@keyframes animation{
     0% {
         left:50%;
         bottom: 10%;
-        background-color:;
+        background-color:pink;
     }
     25% {
         left:50%;
         bottom: 10%;
-        background-color:;
+        background-color:purple;
     }
     50% {
         left:50%;
         bottom: 10%;
-        background-color:;
+        background-color:blueviolet;
     }
 }
-*/
-
+    */
