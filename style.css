@@ -5,44 +5,59 @@ html,
     box-sizing:border-box;
     margin: 0;
     padding:0;
+
 }
 
 h1{
     font-size:5rem;
     text-align: center;
     margin-top:20px;
+    background-color: #deb887;
+    border-width: 8px;
 }
-
+.background{
+    background-image: url(img/background.jpg);
+    
+}
 .container{
     width: 100%;
     display:flex;
     flex-wrap:wrap;
     justify-content: space-around;
-
 }
 
 .card{
-    width:30%; 
-    height:20%;
-    margin:25px 0;
+    width:30rem; 
+    height:auto;
+    margin:15px;
     border:2px;
     border-radius:30px;
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:space-between;
-    background-color: rgb(255, 182, 219);
+    background-color:#deb887;
+    box-sizing:border-box;
+
+    
+}
+.card:hover{
+    transform:scale(1.05) translateY(5px) translateX(-5px);
+    filter:drop-shadow(52);
+    background-color: #f8d7ab;
+}
+
+@media screen and (max-width:1440px) {
+    .card{
+        width:20%; 
+    }
     
 }
 
-@media screen and (max-width:1050px) {
-    .card{
-        width:45%;
-    }
-}
-@media screen and (max-width:440px) {
+@media screen and (max-width:617px) {
     .card{
         width:100%;
+        margin: 25px 0;
     }
     .container{
         flex-direction: column;
@@ -73,7 +88,7 @@ a,
 a:link,
 a:visited,
 a:focus {
-    color:hotpink;
+    color:rgb(121, 84, 40);
     text-decoration: none;
 }
 
@@ -81,17 +96,22 @@ button{
     transition: all 0.3s;
     font-size: 2rem;
     bottom:5rem;
+    border-radius: 30px;
+    border-color: #e99426;
     display:inline-block;
     padding:5px 10px;
     margin: 3px;
+    background-color: rgb(241, 184, 109);
     
 }
 
 button:hover{
-    transform:scale(1) translateY(5px) translateX(-5px);
-    filter:drop-shadow(52);
-    background-color:rgb(255, 182, 219);
+    transform:scale(1.02) translateY(5px) translateX(-5px);
+    filter:drop-shadow(50);
+    background-color: #e99426;
 }
+
+/*
 .animation{
     height:2rem;
     width:2rem;
@@ -102,18 +122,18 @@ button:hover{
     0% {
         left:50%;
         bottom: 10%;
-        background-color: red;
+        background-color:;
     }
     25% {
         left:50%;
         bottom: 10%;
-        background-color: red;
+        background-color:;
     }
     50% {
         left:50%;
         bottom: 10%;
-        background-color: red;
+        background-color:;
     }
 }
-
+*/
 
