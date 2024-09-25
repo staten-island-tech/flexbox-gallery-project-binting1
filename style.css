@@ -38,8 +38,6 @@ h1{
     justify-content:space-between;
     background-color:#deb887;
     box-sizing:border-box;
-
-    
 }
 .card:hover{
     transform:scale(1.05) translateY(5px) translateX(-5px);
@@ -54,13 +52,13 @@ h1{
     
 }
 
-@media screen and (max-width:617px) {
+@media screen and (max-width:618px) {
     .card{
         width:100%;
-        margin: 25px 0;
+        margin: 25px;
     }
     .container{
-        flex-direction: column;
+        flex-direction: row;
     }
 
 }
